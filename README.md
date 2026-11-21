@@ -10,7 +10,7 @@
 
 A high-performance WordPress plugin combining interactive client-side vector QR code generation (Canvas & SVG) with custom URL shortlink routing, secure document hosting, and real-time download telemetry. Designed for organizations, conferences, and businesses that need branded, trackable QR codes and shortlinks with zero external API dependencies.
 
-> 💡 **Community Edition (Developer Preview):** Features the full interactive vector styling studio and shortlink redirection engine, capped at **10 active QR codes / documents**. For unlimited shortlinks, bulk CSV import, and white-label custom domain mapping, see the [Pro Edition Roadmap](#-community-vs-pro-edition).
+> 💡 **Community Edition (Developer Preview):** Features the full interactive vector styling studio and shortlink redirection engine, capped at **5 active QR codes / documents** with standard logo branding. For unlimited shortlinks, bulk CSV import, and white-label custom domain mapping, see the [Pro Edition Roadmap](#-community-vs-pro-edition).
 
 ---
 
@@ -71,8 +71,8 @@ Supports three distinct payload categories:
 
 | Feature | ⚡ Community Edition (This Repo) | 🚀 Pro Enterprise Edition |
 | :--- | :--- | :--- |
-| **Active Shortlinks & QR Codes** | Up to 10 active items | **Unlimited** |
-| **Live Vector Customizer** | Full Access (Canvas & PNG export) | **Full Access + 300 DPI Print SVG / PDF** |
+| **Active Shortlinks & QR Codes** | Up to 5 active items | **Unlimited** |
+| **Live Vector Customizer** | Full Access (Canvas & PNG + Standard Logo) | **Full Access + Custom Logo & 300 DPI SVG** |
 | **Shortlink Routing** | Native `/qr/{slug}` | **Custom Multi-Domain White-Labeling** |
 | **Download Analytics** | Aggregate Download Counter | **Visitor Device, OS, Browser & Geo-Telemetry** |
 | **Batch Generation** | Single creation | **Bulk CSV Import & Multi-QR Export (.zip)** |

@@ -510,7 +510,7 @@ add_action('wp_ajax_tka_doc_qr_create_link', 'tka_doc_qr_handle_create_link');
 add_action('wp_ajax_nopriv_tka_doc_qr_create_link', 'tka_doc_qr_handle_create_link');
 
 /**
- * Check active shortlink capacity (Community Edition Capped at 10)
+ * Check active shortlink capacity (Community Edition Capped at 5)
  */
 function tka_doc_qr_check_limit() {
     $is_pro = (bool) get_option('tka_qr_pro_license', false);
@@ -520,8 +520,8 @@ function tka_doc_qr_check_limit() {
     global $wpdb;
     $table = $wpdb->prefix . 'tka_qr_documents';
     $count = (int) $wpdb->get_var("SELECT COUNT(*) FROM $table");
-    if ($count >= 10) {
-        wp_send_json_error('Community Edition Limit Reached (Max 10 active QR codes / shortlinks). Upgrade to Pro for unlimited dynamic shortlinks, custom domains, and bulk CSV generation!');
+    if ($count >= 5) {
+        wp_send_json_error('Community Edition Limit Reached (Max 5 active QR codes / shortlinks). Upgrade to Pro for unlimited dynamic shortlinks, custom domain mapping, and bulk generation!');
         exit;
     }
     return true;
